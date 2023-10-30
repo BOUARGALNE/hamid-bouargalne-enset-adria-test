@@ -113,4 +113,4 @@ server.port=8761
 eureka.client.fetch-registry=false
 eureka.client.register-with-eureka=false
 ```
-![Eureka](images/eur.png)
+![Eureka](images/eure.png)
