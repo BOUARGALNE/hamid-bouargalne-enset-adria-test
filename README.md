@@ -58,7 +58,7 @@ on cree le transfer-service avec les memes dependances que wallet service
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
      </dependencies>
-  '''
+'''
 * discovery-service :    
 on cree le discovery-service avec les dependances suivantes :  
 '''bash
@@ -68,8 +68,8 @@ on cree le discovery-service avec les dependances suivantes :
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
      </dependencies>
-  '''
- * config-service :    
+'''
+* config-service :    
 on cree le config-service avec les dependances suivantes :  
 '''bash
     <dependencies>
@@ -82,5 +82,5 @@ on cree le config-service avec les dependances suivantes :
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
      </dependencies>
-  '''
+'''
 
