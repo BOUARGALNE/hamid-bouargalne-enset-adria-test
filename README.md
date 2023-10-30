@@ -86,3 +86,31 @@ on cree le config-service avec les dependances suivantes :
      </dependencies>
 ```
 
+## 1. Developpemnet des  micro-services :  
+* gateway-service :
+  dans le fichier application.properties
+  ```bash
+  server.port=8083
+  spring.application.name=gateway-service
+  spring.cloud.discovery.enabled=true
+  ```
+  et dans le fichier on definit les routes d'une maniere dynamic
+  ```
+      @Bean
+    DiscoveryClientRouteDefinitionLocator dynamicRoutes(
+            ReactiveDiscoveryClient rdc,
+            DiscoveryLocatorProperties dlp) {
+
+        return new DiscoveryClientRouteDefinitionLocator(rdc, dlp);
+
+
+    }
+  ```
+* discovery-service :
+  de mmeme dans le fichier de configuration de l'application on definit les parametres de l'app :
+```
+server.port=8761
+eureka.client.fetch-registry=false
+eureka.client.register-with-eureka=false
+```
+![Eureka](images/eur.png)
