@@ -113,4 +113,15 @@ server.port=8761
 eureka.client.fetch-registry=false
 eureka.client.register-with-eureka=false
 ```
-![Eureka](images/eure.png)
+![Eureka](images/eure.png)  
+
+* Wallet-service :
+  application.properties
+```
+server.port=8081
+spring.application.name=wallet-service
+spring.datasource.url=jdbc:h2:mem:db_wallet
+spring.cloud.discovery.enabled=true
+```
+apres cela je cree les deux entities Client et Wallet et je initialise quelques attribus de Client 
+
