@@ -41,10 +41,10 @@ on cree le service wallet service avec les dependances suivantes :
 * transfer-service :    
 on cree le transfer-service avec les memes dependances que wallet service
 * gateway-service :    
- on cree le gateway-service avec les dependances suivantes :
+ on cree le gateway-service avec les dependances suivantes :  
 
-'''bash
-    <dependencies>
+```bash
+ <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -58,20 +58,22 @@ on cree le transfer-service avec les memes dependances que wallet service
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
      </dependencies>
-'''
+```
 * discovery-service :    
-on cree le discovery-service avec les dependances suivantes :  
-'''bash
+on cree le discovery-service avec les dependances suivantes :
+
+
+```bash
     <dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
      </dependencies>
-'''
+```
 * config-service :    
 on cree le config-service avec les dependances suivantes :  
-'''bash
+```bash
     <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -82,5 +84,5 @@ on cree le config-service avec les dependances suivantes :
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
      </dependencies>
-'''
+```
 
