@@ -1,7 +1,8 @@
 # hamid-bouargalne-enset-adria-test
 
 ## 1. Creation des  micro-services :  
-tout d'abord on cree un empty projet puis on cree les services pour les ajoutees a ce empty projet par la suite sous formes des modules
+tout d'abord on cree un empty projet puis on cree les services pour les ajoutees a ce empty projet par la suite sous formes des modules  
+dans ce projet je choisi de travailler avec Eureka
 
 * wallet service :  
 on cree le service wallet service avec les dependances suivantes :
@@ -37,3 +38,48 @@ on cree le service wallet service avec les dependances suivantes :
         </dependency>
 </dependencies>
 ```
+* transfer-service :    
+on cree le transfer-service avec les memes dependances que wallet service
+* gateway-service :    
+on cree le gateway-service avec les dependances suivantes :  
+'''
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+     </dependencies>
+  '''
+* discovery-service :    
+on cree le discovery-service avec les dependances suivantes :  
+'''
+    <dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+     </dependencies>
+  '''
+ * config-service :    
+on cree le config-service avec les dependances suivantes :  
+'''
+    <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+     </dependencies>
+  '''
+
