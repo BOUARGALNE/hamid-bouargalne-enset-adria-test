@@ -3,7 +3,7 @@
 ## 1. Creation des  micro-services :  
 tout d'abord on cree un empty projet puis on cree les services pour les ajoutees a ce empty projet par la suite sous formes des modules
 
-* wallet service
+* wallet service :  
 on cree le service wallet service avec les dependances suivantes :
 
 ```bash
