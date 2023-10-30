@@ -42,7 +42,7 @@ on cree le service wallet service avec les dependances suivantes :
 on cree le transfer-service avec les memes dependances que wallet service
 * gateway-service :    
 on cree le gateway-service avec les dependances suivantes :  
-'''
+'''bash
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,7 +60,7 @@ on cree le gateway-service avec les dependances suivantes :
   '''
 * discovery-service :    
 on cree le discovery-service avec les dependances suivantes :  
-'''
+'''bash
     <dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -70,7 +70,7 @@ on cree le discovery-service avec les dependances suivantes :
   '''
  * config-service :    
 on cree le config-service avec les dependances suivantes :  
-'''
+'''bash
     <dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
