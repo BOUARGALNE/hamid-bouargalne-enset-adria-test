@@ -41,7 +41,8 @@ on cree le service wallet service avec les dependances suivantes :
 * transfer-service :    
 on cree le transfer-service avec les memes dependances que wallet service
 * gateway-service :    
-on cree le gateway-service avec les dependances suivantes :  
+ on cree le gateway-service avec les dependances suivantes :
+
 '''bash
     <dependencies>
         <dependency>
